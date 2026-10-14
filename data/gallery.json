@@ -1,0 +1,74 @@
+[
+  {
+    "file": "about-me.jpeg",
+    "src": "gallery/about-me.jpeg",
+    "alt": "",
+    "caption": "",
+    "width": 1066,
+    "height": 1600
+  },
+  {
+    "file": "IMG_5208.JPEG",
+    "src": "gallery/IMG_5208.JPEG",
+    "alt": "",
+    "caption": "",
+    "width": 7008,
+    "height": 4672
+  },
+  {
+    "file": "IMG_5223.JPG.jpeg",
+    "src": "gallery/IMG_5223.JPG.jpeg",
+    "alt": "",
+    "caption": "",
+    "width": 3808,
+    "height": 5712
+  },
+  {
+    "file": "IMG_5224.JPG.jpeg",
+    "src": "gallery/IMG_5224.JPG.jpeg",
+    "alt": "",
+    "caption": "",
+    "width": 5712,
+    "height": 3808
+  },
+  {
+    "file": "IMG_5229.JPEG",
+    "src": "gallery/IMG_5229.JPEG",
+    "alt": "",
+    "caption": "",
+    "width": 7008,
+    "height": 4672
+  },
+  {
+    "file": "IMG.jpeg",
+    "src": "gallery/IMG.jpeg",
+    "alt": "",
+    "caption": "",
+    "width": 900,
+    "height": 1600
+  },
+  {
+    "file": "IMG1.jpeg",
+    "src": "gallery/IMG1.jpeg",
+    "alt": "",
+    "caption": "",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "file": "IMG2.jpeg",
+    "src": "gallery/IMG2.jpeg",
+    "alt": "",
+    "caption": "",
+    "width": 1600,
+    "height": 1066
+  },
+  {
+    "file": "IMG5.jpeg",
+    "src": "gallery/IMG5.jpeg",
+    "alt": "",
+    "caption": "",
+    "width": 780,
+    "height": 1040
+  }
+]

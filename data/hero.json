@@ -1,0 +1,12 @@
+{
+  "name": { "en": "Pheng Yang", "la": "ເພັງ ຢ່າງ" },
+  "titles": [
+    { "en": "Web Developer", "la": "ນັກພັດທະນາເວັບ" },
+    { "en": "React Developer", "la": "ນັກພັດທະນາ Frontend" },
+    { "en": "UX/UI Designer", "la": "ນັກອອກແບບ UX/UI" }
+  ],
+  "profile": {
+    "en": "I am passionate about web development and always willing to learn new things. I enjoy solving problems, learning new technologies, and working with a team. I am friendly, responsible, and open to new ideas. I always try my best to improve my skills and create useful, high-quality websites.",
+    "la": "ຂ້ອຍມີຄວາມມັກໃນການພັດທະນາເວັບໄຊ ແລະ ພ້ອມຮຽນຮູ້ສິ່ງໃໝ່ໆສະເໝີ. ຂ້ອຍມັກແກ້ໄຂບັນຫາ, ຮຽນຮູ້ເຕັກໂນໂລຢີໃໝ່ ແລະ ເຮັດວຽກເປັນທີມ. ຂ້ອຍເປັນຄົນເປັນມິດ, ມີຄວາມຮັບຜິດຊອບ ແລະ ເປີດໃຈຮັບແນວຄິດໃໝ່. ຂ້ອຍພະຍາຍາມພັດທະນາທັກສະຂອງຕົນເອງສະເໝີ ເພື່ອສ້າງເວັບໄຊທີ່ມີປະໂຫຍດ ແລະ ມີຄຸນນະພາບສູງ."
+  }
+}

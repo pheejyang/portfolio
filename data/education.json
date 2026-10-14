@@ -1,0 +1,20 @@
+[
+  {
+    "degree": { "en": "Bachelor of Computer Science", "la": "ປະລິນຍາຕີ ວິທະຍາສາດຄອມພິວເຕີ" },
+    "institution": { "en": "Faculty of Engineering, NUOL, Vientiane Capital", "la": "ຄະນະວິສະວະກຳສາດ, ມະຫາວິທະຍາໄລແຫ່ງຊາດ (ມຊ), ນະຄອນຫຼວງວຽງຈັນ" },
+    "from": "2022",
+    "to": "2026"
+  },
+  {
+    "degree": { "en": "Upper Secondary School", "la": "ມັດທະຍົມສຶກສາຕອນປາຍ" },
+    "institution": { "en": "Luang Prabang, Laos", "la": "ຫຼວງພະບາງ, ລາວ" },
+    "from": "2019",
+    "to": "2021"
+  },
+  {
+    "degree": { "en": "Lower Secondary School", "la": "ມັດທະຍົມສຶກສາຕອນຕົ້ນ" },
+    "institution": { "en": "Luang Prabang, Laos", "la": "ຫຼວງພະບາງ, ລາວ" },
+    "from": "2015",
+    "to": "2018"
+  }
+]

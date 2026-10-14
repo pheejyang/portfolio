@@ -1,0 +1,11 @@
+[
+  { "name": "HTML", "level": 85 },
+  { "name": "CSS", "level": 90 },
+  { "name": "JavaScript", "level": 90 },
+  { "name": "React.js", "level": 89 },
+  { "name": "TypeScript", "level": 85 },
+  { "name": "Node.js", "level": 75 },
+  { "name": "C#.NET", "level": 85 },
+  { "name": "UX/UI", "level": 90 },
+  { "name": "MS Office", "level": 75 }
+]

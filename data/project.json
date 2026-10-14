@@ -1,0 +1,19 @@
+[
+  {
+    "id": "job-applicant-management",
+    "name": "Job Applicant Management System",
+    "description": {
+      "en": "A recruitment system for managing jobs, applicants, and interviews. Built with a responsive React, TypeScript and Tailwind CSS interface, with API integration, authentication, CRUD operations and a database.",
+      "la": "ລະບົບຈັດການການຮັບສະໝັກພະນັກງານ ສຳລັບຈັດການຕຳແໜ່ງງານ, ຜູ້ສະໝັກ ແລະ ການສຳພາດ. ພັດທະນາດ້ວຍ React, TypeScript ແລະ Tailwind CSS ທີ່ຮອງຮັບທຸກຂະໜາດໜ້າຈໍ ພ້ອມການເຊື່ອມຕໍ່ API, ລະບົບຢັ້ງຢືນຕົວຕົນ, ການເພີ່ມ/ອ່ານ/ແກ້ໄຂ/ລຶບຂໍ້ມູນ ແລະ ຖານຂໍ້ມູນ."
+    },
+    "technologies": ["React", "TypeScript", "Tailwind CSS", "REST APIs", "Authentication", "CRUD", "Database"],
+    "images": [
+      "projects/project-image.png",
+      "projects/project-image2.png",
+      "projects/project-image3.png"
+    ],
+    "placeholderImages": false,
+    "githubUrl": "",
+    "liveUrl": ""
+  }
+]

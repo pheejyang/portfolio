@@ -1,0 +1,27 @@
+[
+  {
+    "position": { "en": "Hotel Receptionist", "la": "ພະນັກງານຕ້ອນຮັບໂຮງແຮມ" },
+    "companyName": "The Davara Hotel",
+    "from": "5/2023",
+    "to": "4/2024",
+    "location": { "en": "Vientiane Capital", "la": "ນະຄອນຫຼວງວຽງຈັນ" },
+    "description": [
+      { "en": "Managed front desk operations, including check in/out.", "la": "ຄຸ້ມຄອງວຽກໂຕະຕ້ອນຮັບ ລວມທັງການເຊັກອິນ/ເຊັກເອົາ." },
+      { "en": "Coordinated with housekeeping and maintenance to ensure guest satisfaction.", "la": "ປະສານງານກັບພະແນກແມ່ບ້ານ ແລະ ຊ່າງບຳລຸງຮັກສາ ເພື່ອໃຫ້ແຂກພໍໃຈ." },
+      { "en": "Resolved guest inquiries and complaints professionally.", "la": "ແກ້ໄຂຄຳຖາມ ແລະ ຄຳຮ້ອງທຸກຂອງແຂກຢ່າງມືອາຊີບ." },
+      { "en": "Managed domestic and international reservations via phone and email.", "la": "ຈັດການການຈອງພາຍໃນ ແລະ ຕ່າງປະເທດ ຜ່ານໂທລະສັບ ແລະ ອີເມວ." }
+    ]
+  },
+  {
+    "position": { "en": "Head Leader Team", "la": "ຫົວໜ້າທີມ" },
+    "companyName": "Santhiphap High School",
+    "from": "8/2021",
+    "to": "8/2022",
+    "location": { "en": "Luang Prabang", "la": "ຫຼວງພະບາງ" },
+    "description": [
+      { "en": "Delegate of student committee.", "la": "ຕົວແທນຂອງຄະນະກຳມະການນັກຮຽນ." },
+      { "en": "Organize the class and learning instruction.", "la": "ຈັດລະບຽບຫ້ອງຮຽນ ແລະ ການຮຽນການສອນ." },
+      { "en": "Weekly, monthly and quarter report to division committee.", "la": "ລາຍງານປະຈຳອາທິດ, ເດືອນ ແລະ ໄຕມາດ ຕໍ່ຄະນະກຳມະການພະແນກ." }
+    ]
+  }
+]

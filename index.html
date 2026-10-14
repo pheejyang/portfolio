@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="lo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO -->
+    <title>Pheng Yang | Web Developer – React, TypeScript, UX/UI</title>
+    <meta
+      name="description"
+      content="Pheng Yang is a web developer from Laos building responsive websites with React, TypeScript and Tailwind CSS. Explore skills, projects, experience and contact."
+    />
+    <meta name="author" content="Pheng Yang" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <link rel="canonical" href="%VITE_SITE_URL%/" />
+
+    <!-- Browser UI -->
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp, Telegram, Messenger…) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pheng Yang" />
+    <meta property="og:title" content="Pheng Yang | Web Developer" />
+    <meta
+      property="og:description"
+      content="Responsive websites built with React, TypeScript and Tailwind CSS. See my skills, projects and experience."
+    />
+    <meta property="og:url" content="%VITE_SITE_URL%/" />
+    <meta property="og:image" content="%VITE_SITE_URL%/og-image.png" />
+    <meta property="og:image:secure_url" content="%VITE_SITE_URL%/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Pheng Yang, Web Developer — React, TypeScript, Tailwind CSS, UX/UI" />
+    <meta property="og:locale" content="lo_LA" />
+    <meta property="og:locale:alternate" content="en_US" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pheng Yang | Web Developer" />
+    <meta
+      name="twitter:description"
+      content="Responsive websites built with React, TypeScript and Tailwind CSS. See my skills, projects and experience."
+    />
+    <meta name="twitter:image" content="%VITE_SITE_URL%/og-image.png" />
+    <meta name="twitter:image:alt" content="Pheng Yang, Web Developer — React, TypeScript, Tailwind CSS, UX/UI" />
+
+    <!-- Structured data (helps Google understand who this site is about) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "%VITE_SITE_URL%/#website",
+            "url": "%VITE_SITE_URL%/",
+            "name": "Pheng Yang — Portfolio",
+            "inLanguage": ["lo", "en"],
+            "publisher": { "@id": "%VITE_SITE_URL%/#person" }
+          },
+          {
+            "@type": "Person",
+            "@id": "%VITE_SITE_URL%/#person",
+            "name": "Pheng Yang",
+            "jobTitle": "Web Developer",
+            "url": "%VITE_SITE_URL%/",
+            "image": "%VITE_SITE_URL%/hero.jpg",
+            "email": "mailto:phengyaj2017@gmail.com",
+            "description": "Web developer from Laos building responsive websites with React, TypeScript and Tailwind CSS.",
+            "knowsAbout": ["HTML", "CSS", "JavaScript", "React", "TypeScript", "Node.js", "C#.NET", "UX/UI design"]
+          }
+        ]
+      }
+    </script>
+
+    <script>
+      // Runs before first paint: theme, language and the "js" flag used by entrance animations.
+      try {
+        var d = document.documentElement
+        d.classList.add('js')
+        var t = localStorage.getItem('theme')
+        if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+        d.dataset.theme = t
+        d.lang = localStorage.getItem('lang') === 'en' ? 'en' : 'lo'
+      } catch (e) {
+        document.documentElement.dataset.theme = 'light'
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Fallback for crawlers and link scrapers that do not run JavaScript -->
+    <noscript>
+      <main style="max-width: 40rem; margin: 6rem auto; padding: 0 1.25rem; font-family: system-ui, sans-serif; line-height: 1.6">
+        <h1>Pheng Yang — Web Developer</h1>
+        <p>
+          I am passionate about web development and always willing to learn new things. I build responsive websites with
+          React, TypeScript and Tailwind CSS.
+        </p>
+        <p>Contact: <a href="mailto:phengyaj2017@gmail.com">phengyaj2017@gmail.com</a></p>
+        <p>Please enable JavaScript to view the full portfolio.</p>
+      </main>
+    </noscript>
+
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

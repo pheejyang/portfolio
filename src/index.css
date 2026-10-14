@@ -1,0 +1,269 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+/* ---------- Theme colours (change the accent here) ---------- */
+:root,
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg: #ffffff;
+  --bg-alt: #f4f7fc;
+  --card: #ffffff;
+  --fg: #0f172a;
+  --muted: #475569;
+  --line: #dde5f0;
+  --accent: #2563eb;
+  --accent-fg: #ffffff;
+  --accent-soft: #e8f0ff;
+  --footer: #e9eef6;
+  --nav: rgb(255 255 255 / 0.85);
+  --shadow: 0 1px 2px rgb(15 23 42 / 0.05), 0 6px 20px rgb(15 23 42 / 0.06);
+}
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #0b1220;
+  --bg-alt: #0f1829;
+  --card: #121d32;
+  --fg: #e6edf7;
+  --muted: #a3b2c9;
+  --line: #24344f;
+  --accent: #6aa3ff;
+  --accent-fg: #07121f;
+  --accent-soft: #14284d;
+  --footer: #070d18;
+  --nav: rgb(11 18 32 / 0.85);
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 6px 20px rgb(0 0 0 / 0.25);
+}
+
+@theme inline {
+  --font-sans: 'Inter Variable', 'Noto Sans Lao Variable', system-ui, sans-serif;
+  --color-bg: var(--bg);
+  --color-alt: var(--bg-alt);
+  --color-card: var(--card);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  --color-soft: var(--accent-soft);
+  --color-footer: var(--footer);
+  --shadow-card: var(--shadow);
+}
+
+/* ---------- Base ---------- */
+:root {
+  --nav-h: 4rem;
+}
+html {
+  scrollbar-gutter: stable; /* no layout jump when the lightbox hides the scrollbar */
+  scroll-snap-type: y proximity; /* forgiving on touch / small screens */
+}
+@media (min-width: 1024px) and (min-height: 700px) and (pointer: fine) {
+  html {
+    scroll-snap-type: y mandatory;
+  }
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  overflow-x: clip;
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+html[lang='lo'] body {
+  line-height: 1.8; /* Lao vowel/tone marks need more room */
+}
+html[lang='lo'] h1,
+html[lang='lo'] h2,
+html[lang='lo'] h3 {
+  line-height: 1.45;
+}
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+img {
+  max-width: 100%;
+}
+
+/* Component classes live in the components layer so Tailwind utilities (e.g. xl:hidden) can override them. */
+@layer components {
+/* ---------- Layout helpers ---------- */
+/* Every section fills the screen below the fixed navbar and grows if its content is taller. */
+.section {
+  min-height: 100svh;
+  padding-top: var(--nav-h);
+  display: flex;
+  align-items: center;
+  scroll-snap-align: start;
+  position: relative;
+}
+.wrap {
+  width: 100%;
+  max-width: 72rem;
+  margin-inline: auto;
+  padding: 3rem 1.25rem;
+}
+@media (min-width: 768px) {
+  .wrap {
+    padding-inline: 2rem;
+  }
+}
+.section-title {
+  font-size: clamp(1.75rem, 1.2rem + 2vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.section-sub {
+  margin-top: 0.5rem;
+  color: var(--muted);
+  max-width: 40rem;
+}
+.title-bar {
+  display: block;
+  width: 3rem;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--accent);
+  margin-top: 0.9rem;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding: 0.55rem 1.25rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+  cursor: pointer;
+  text-align: center;
+}
+.btn-primary {
+  background: var(--accent);
+  color: var(--accent-fg);
+}
+.btn-primary:hover {
+  filter: brightness(1.08);
+}
+.btn-ghost {
+  border-color: var(--line);
+  background: var(--card);
+  color: var(--fg);
+}
+.btn-ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.65rem;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--fg);
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+.icon-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.tag {
+  display: inline-block;
+  padding: 0.15rem 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+}
+
+/* ---------- Entrance animations ----------
+   Only opacity + transform, only inside .js, and App adds `.in` to a section once
+   (never removed), so nothing restarts when you scroll back across a boundary. */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.45s ease, transform 0.45s ease;
+  transition-delay: calc(min(var(--i, 0), 8) * 60ms);
+}
+.js .in .reveal {
+  opacity: 1;
+  transform: none;
+}
+.bar-fill {
+  transform: scaleX(var(--p));
+  transform-origin: left center;
+}
+.js .bar-fill {
+  transform: scaleX(0);
+  transition: transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1);
+  transition-delay: calc(var(--i, 0) * 70ms);
+}
+.js .in .bar-fill {
+  transform: scaleX(var(--p));
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  margin-left: 3px;
+  vertical-align: -0.12em;
+  background: var(--accent);
+  animation: blink 1.2s step-end infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.bounce {
+  animation: bounce 1.8s ease-in-out infinite;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal,
+  .js .bar-fill {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .js .bar-fill {
+    transform: scaleX(var(--p));
+  }
+  .cursor,
+  .bounce {
+    animation: none;
+  }
+  * {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

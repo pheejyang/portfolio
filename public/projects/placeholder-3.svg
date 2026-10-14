@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" role="img" aria-label="Placeholder screenshot 3">
+  <rect width="1280" height="800" fill="#e8eef8"/>
+  <rect x="80" y="70" width="1120" height="660" rx="20" fill="#ffffff" stroke="#c5d3ea" stroke-width="3"/>
+  <rect x="80" y="70" width="1120" height="70" rx="20" fill="#dbe6f7"/>
+  <circle cx="125" cy="105" r="9" fill="#9db4d9"/><circle cx="157" cy="105" r="9" fill="#9db4d9"/><circle cx="189" cy="105" r="9" fill="#9db4d9"/>
+  <rect x="130" y="190" width="300" height="26" rx="8" fill="#c5d3ea"/>
+  <rect x="130" y="240" width="460" height="16" rx="8" fill="#dbe6f7"/>
+  <rect x="130" y="276" width="400" height="16" rx="8" fill="#dbe6f7"/>
+  <rect x="130" y="350" width="320" height="300" rx="14" fill="#eef3fb" stroke="#c5d3ea" stroke-width="2"/>
+  <rect x="480" y="350" width="320" height="300" rx="14" fill="#eef3fb" stroke="#c5d3ea" stroke-width="2"/>
+  <rect x="830" y="350" width="320" height="300" rx="14" fill="#eef3fb" stroke="#c5d3ea" stroke-width="2"/>
+  <text x="640" y="700" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#3b6fd4">PLACEHOLDER · SCREENSHOT 3</text>
+</svg>
